@@ -26,7 +26,6 @@ Material:
   - COLOR_GRADIENT_ON
   - FOAM_SHADOWS_ON
   - INTERSECTION_EFFECTS_ON
-  - SURFACE_FOAM_ON
   - WATER_LIGHTING_ON
   - WORLD_SPACE_UV_ON
   m_InvalidKeywords: []
@@ -85,54 +84,54 @@ Material:
     - _CausticsSpeed: 0
     - _CausticsSplit: 0
     - _CausticsStrength: 0
-    - _FoamShadowDepth: 0
-    - _FoamShadowStrength: 0
-    - _IntersectionFoamBlend: 1
-    - _IntersectionFoamDepth: 1.16
-    - _IntersectionFoamScale: 2
-    - _IntersectionFoamShadowProjection: 0
-    - _IntersectionWaterBlend: 1
-    - _LightingHardness: 0.505
-    - _LightingSmoothness: 0.179
-    - _NormalsStrength: 1
+    - _FoamShadowDepth: 2.63
+    - _FoamShadowStrength: 0.635
+    - _IntersectionFoamBlend: 0.162
+    - _IntersectionFoamDepth: 0.69
+    - _IntersectionFoamScale: 0.257
+    - _IntersectionFoamShadowProjection: 3.77
+    - _IntersectionWaterBlend: 0.076
+    - _LightingHardness: 0.559
+    - _LightingSmoothness: 0.396
+    - _NormalsStrength: 0.215
     - _PlanarReflectionFresnel: 7
-    - _PlanarReflectionStrength: 0.45
+    - _PlanarReflectionStrength: 1
     - _QueueControl: 1
     - _QueueOffset: 0
-    - _RefractionStrength: 0.3
-    - _ShoreBlend: 0.588
+    - _RefractionStrength: 0
+    - _ShoreBlend: 0
     - _ShoreDepth: 3
-    - _ShoreFade: 0.993
+    - _ShoreFade: 1
     - _ShoreFoamBreakupScale: 0
     - _ShoreFoamBreakupStrength: 0
     - _ShoreFoamFrequency: 0
     - _ShoreFoamSpeed: 0
     - _ShoreFoamWidth: 0
-    - _SurfaceFoamBlend: 1
+    - _SurfaceFoamBlend: 0
     - _SurfaceFoamHeightMask: 0
-    - _SurfaceFoamHeightMaskSmoothness: 1
-    - _SurfaceFoamShadowProjection: 0
-    - _UnderwaterRefractionStrength: 0
-    - _WaterColorDepth: 4
-    - _WaterColorHorizonDistance: 20
+    - _SurfaceFoamHeightMaskSmoothness: 0
+    - _SurfaceFoamShadowProjection: 2.23
+    - _UnderwaterRefractionStrength: 0.3
+    - _WaterColorDepth: 3.22
+    - _WaterColorHorizonDistance: 12.46
     m_Colors:
-    - _IntersectionFoamColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-    - _IntersectionFoamMovement: {r: 0.756, g: 0.11, b: 0, a: 0}
-    - _IntersectionFoamSampling: {r: 1, g: 0, b: 0, a: 0}
+    - _IntersectionFoamColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
+    - _IntersectionFoamMovement: {r: 0, g: 0.029, b: 0, a: 0}
+    - _IntersectionFoamSampling: {r: 1, g: 0.38, b: 0, a: 0}
     - _LightingDiffuseColor: {r: 0, g: 0, b: 0, a: 0}
-    - _LightingSpecularColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0}
-    - _NormalsMovement: {r: 0.158, g: 2, b: 0, a: 0}
+    - _LightingSpecularColor: {r: 1, g: 0.98213357, b: 0.75157225, a: 0}
+    - _NormalsMovement: {r: 0.3, g: 0.088, b: 0, a: 0}
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 0}
     - _SurfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
-    - _SurfaceFoamColor2: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0.7294118}
-    - _SurfaceFoamMovement: {r: 0.5, g: 0.36, b: 0.5, a: 2}
-    - _SurfaceFoamSampling: {r: 0.938, g: 1.09, b: 0, a: 0}
-    - _SurfaceFoamTilingAndOffset: {r: 0, g: 0, b: 2, a: 0.44}
-    - _WaterColorDeep: {r: 0.17888929, g: 0.36349294, b: 0.5660378, a: 1}
-    - _WaterColorHorizon: {r: 0, g: 0, b: 0, a: 1}
-    - _WaterColorShallow: {r: 0, g: 0, b: 0, a: 1}
-    - _WaterColorUnderwater: {r: 0.20387325, g: 0.3097529, b: 0.517647, a: 0}
-    - _WaveColor: {r: 0, g: 0, b: 0, a: 0}
-    - _WaveDirections: {r: 0.591, g: 0.497, b: 0.553, a: 0.614}
-    - _WaveVisuals: {r: 0.5, g: 20, b: 3, a: 0}
+    - _SurfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.7294118}
+    - _SurfaceFoamMovement: {r: 0, g: 0, b: 0, a: 0}
+    - _SurfaceFoamSampling: {r: 0, g: 0, b: 0, a: 0}
+    - _SurfaceFoamTilingAndOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _WaterColorDeep: {r: 0, g: 0, b: 0, a: 1}
+    - _WaterColorHorizon: {r: 0, g: 0.0006196006, b: 0.028301895, a: 1}
+    - _WaterColorShallow: {r: 0.9627912, g: 1, b: 0, a: 1}
+    - _WaterColorUnderwater: {r: 0.0026106483, g: 0.03675315, b: 0.103773594, a: 0}
+    - _WaveColor: {r: 0, g: 0.24750662, b: 1, a: 0}
+    - _WaveDirections: {r: 0, g: 0, b: 0, a: 0}
+    - _WaveVisuals: {r: 0.009, g: 20, b: 1.55, a: 0}
   m_BuildTextureStacks: []
