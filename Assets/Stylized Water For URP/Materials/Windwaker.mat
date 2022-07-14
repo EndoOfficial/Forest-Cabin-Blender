@@ -8,18 +8,17 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windwaker
-  m_Shader: {fileID: -6465566751694194690, guid: a9aea49e19495174f80f910ddb189a37, type: 3}
-  m_ValidKeywords:
+  m_Shader: {fileID: -6465566751694194690, guid: c364b2f6d92c3d94fb154cb63a77dd9c, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - FOAM_SHADOWS_ON
   - INTERSECTION_EFFECTS_ON
   - SURFACE_FOAM_ON
-  - WORLD_SPACE_UV_ON
-  m_InvalidKeywords:
-  - COLOR_GRADIENT_ON
   - WATER_LIGHTING_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -50,7 +49,7 @@ Material:
     - INTERSECTION_EFFECTS: 1
     - REFRACTION: 0
     - SURFACE_FOAM: 1
-    - WORLD_SPACE_UV: 1
+    - WORLD_SPACE_UV: 0
     - _IntersectionFoamBlend: 1
     - _IntersectionFoamDepth: 0.51
     - _IntersectionFoamScale: 0.257
@@ -69,16 +68,17 @@ Material:
     - _IntersectionFoamMovement: {r: 0.836, g: 1.078, b: 0, a: 0}
     - _IntersectionFoamSampling: {r: 1, g: 0.38, b: 0, a: 0}
     - _NormalsMovement: {r: 0.3, g: 0.938, b: 0, a: 0}
-    - _ShoreColor: {r: 1, g: 1, b: 1, a: 0}
+    - _ShoreColor: {r: 0, g: 0, b: 0, a: 0}
     - _SurfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
     - _SurfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.7294118}
     - _SurfaceFoamMovement: {r: 0, g: 0, b: 0, a: 0}
     - _SurfaceFoamSampling: {r: 1, g: 0, b: 0, a: 0}
     - _SurfaceFoamTilingAndOffset: {r: 0, g: 0, b: 0, a: 0}
     - _WaterColorDeep: {r: 0, g: 0.42745093, b: 0.6784314, a: 1}
-    - _WaterColorHorizon: {r: 1, g: 1, b: 1, a: 1}
+    - _WaterColorHorizon: {r: 0, g: 0, b: 0, a: 1}
     - _WaterColorShallow: {r: 0, g: 0.6313726, b: 1, a: 1}
-    - _WaveColor: {r: 1, g: 1, b: 1, a: 0}
+    - _WaterColorUnderwater: {r: 0.2039216, g: 0.3098039, b: 0.5176471, a: 0}
+    - _WaveColor: {r: 0, g: 0, b: 0, a: 0}
     - _WaveDirections: {r: 0, g: 0.64, b: 1, a: 0.33}
     - _WaveVisuals: {r: 0.018, g: 7.9, b: 1.38, a: 0}
   m_BuildTextureStacks: []
