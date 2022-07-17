@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -156,7 +156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33992127}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.1924973, y: 43.4, z: 0.29999924}
+  m_LocalPosition: {x: 0, y: 43.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -951,7 +951,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.07
+      value: 0.08
       mode: 0
       spread: 0
       speed:
@@ -1070,7 +1070,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 250
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5244,7 +5244,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b34200e825cbad4e91d392222b982af, type: 2}
+  - {fileID: 2100000, guid: a2fcb7ed3014e2e4a9f5fd1b90e8e560, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5502,7 +5502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388655464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.211372, y: 16.853836, z: 1.0890923}
+  m_LocalPosition: {x: 0, y: 52.28469, z: 0}
   m_LocalScale: {x: 511.62, y: 511.62, z: 511.62}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -9381,7 +9381,7 @@ ParticleSystem:
   LightsModule:
     enabled: 1
     ratio: 1
-    light: {fileID: 0}
+    light: {fileID: 1422401909}
     randomDistribution: 0
     color: 1
     range: 1
@@ -9492,7 +9492,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    maxLights: 20
+    maxLights: 1000
   TrailModule:
     enabled: 0
     mode: 0
@@ -15458,8 +15458,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 25
-      minScalar: 15
+      scalar: 80
+      minScalar: 50
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -15943,7 +15943,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 5000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -19150,8 +19150,8 @@ ParticleSystem:
     subEmitters:
     - serializedVersion: 3
       emitter: {fileID: 0}
-      type: 0
-      properties: 0
+      type: 1
+      properties: -1
       emitProbability: 1
   LightsModule:
     enabled: 0
@@ -20291,23 +20291,23 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 2800000, guid: 54109a0a754032c458563a9ff982d502, type: 3}
-  shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42745093, b: 0.6784314, a: 1}
-  colorDepth: 1.51
-  horizonColor: {r: 0, g: 0, b: 0, a: 1}
+  shallowColor: {r: 0.9627912, g: 1, b: 0, a: 1}
+  deepColor: {r: 0, g: 0, b: 0, a: 1}
+  colorDepth: 1.79
+  horizonColor: {r: 1, g: 1, b: 1, a: 1}
   horizonDistance: 20
-  shoreFade: 0
-  shoreColor: {r: 0, g: 0, b: 0, a: 0}
+  shoreFade: 1
+  shoreColor: {r: 1, g: 1, b: 1, a: 0}
   shoreStrength: 0
   shoreBlend: 0
-  shoreDepth: 0
-  waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.2039216, g: 0.3098039, b: 0.5176471, a: 0}
+  shoreDepth: 3
+  waveColor: {r: 0, g: 0.5328021, b: 1, a: 0}
+  underwaterColor: {r: 0.0026106483, g: 0.03675315, b: 0.103773594, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.3
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
-  surfaceFoamSampling: {x: 1, y: 0}
-  surfaceFoamCutoff: 1
+  surfaceFoamSampling: {x: 0, y: 0}
+  surfaceFoamCutoff: 0
   surfaceFoamDistortion: 0
   surfaceFoamBlend: 0
   surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
@@ -20322,7 +20322,7 @@ MonoBehaviour:
   surfaceFoamOffsetY: 0
   surfaceFoamScale1: 0
   surfaceFoamScale2: 0
-  enableSurfaceFoam: 1
+  enableSurfaceFoam: 0
   surfaceFoamHeightMask: 0
   surfaceFoamHeightMaskSmoothness: 0
   enableHeightMask: 0
@@ -20331,12 +20331,12 @@ MonoBehaviour:
   surfaceFoamShadowProjection: 2.23
   intersectionFoamShadowProjection: 3.77
   foamMovement: 0
-  intersectionFoamDepth: 0.51
+  intersectionFoamDepth: 0.23
   intersectionFoamTexture: {fileID: 2800000, guid: 772031b03d9d46e4ab03e15c8e17718c, type: 3}
   intersectionFoamColor: {r: 1, g: 1, b: 1, a: 1}
   intersectionFoamMovement: {x: 0, y: 0.029}
-  intersectionFoamDirection: 0.836
-  intersectionFoamSpeed: 1.078
+  intersectionFoamDirection: 0
+  intersectionFoamSpeed: 0.029
   intersectionFoamScale: 0.257
   intersectionFoamSampling: {x: 1, y: 0.38}
   intersectionFoamCutoff: 1
@@ -20355,27 +20355,27 @@ MonoBehaviour:
   lightingDiffuseColor: {r: 0, g: 0, b: 0, a: 0}
   lightingHardness: 1
   normalsTexture: {fileID: 2800000, guid: a41da5f5671718b47bbc71e9ef691103, type: 3}
-  normalsMovement: {x: 0.3, y: 0.938}
+  normalsMovement: {x: 0.02, y: 2}
   normalsStrength: 0.369
-  normalsScale: 0.938
-  normalsSpeed: 0.3
-  refractionStrength: 0.004
-  waveVisuals: {x: 0.018, y: 7.9, z: 1.38}
-  waveSteepness: 0.018
-  waveLength: 7.9
-  waveSpeed: 1.38
-  waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
+  normalsScale: 2
+  normalsSpeed: 0.02
+  refractionStrength: 0.011
+  waveVisuals: {x: 0.009, y: 20, z: 1.55}
+  waveSteepness: 0.009
+  waveLength: 20
+  waveSpeed: 1.55
+  waveDirections: {x: 0, y: 0, z: 0, w: 0}
   waveDirection1: 0
-  waveDirection2: 0.64
-  waveDirection3: 1
-  waveDirection4: 0.33
-  waterUVs: 0
+  waveDirection2: 0
+  waveDirection3: 0
+  waveDirection4: 0
+  waterUVs: 1
   hideComponents: 0
-  enableFoamShadows: 0
+  enableFoamShadows: 1
   enableRefraction: 0
   meshRenderer: {fileID: 826891737}
   meshFilter: {fileID: 826891738}
-  material: {fileID: 2100000, guid: ea66d3ba3c5ac7d498707e8c9e54524f, type: 2}
+  material: {fileID: 2100000, guid: d337fc5282607644ebb2f3575513265e, type: 2}
 --- !u!23 &826891737
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20396,7 +20396,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ea66d3ba3c5ac7d498707e8c9e54524f, type: 2}
+  - {fileID: 2100000, guid: d337fc5282607644ebb2f3575513265e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20672,7 +20672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.06689309, y: 0.4985054, z: -0.038620654, w: 0.86343855}
-  m_LocalPosition: {x: -71.3, y: 72.79469, z: -36.7}
+  m_LocalPosition: {x: -54.53, y: 69.78, z: -27.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25994,6 +25994,121 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8378884397551883409, guid: 47b267544c7253445a061a5e1a05eff8, type: 3}
   m_PrefabInstance: {fileID: 2106155274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1422401907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422401910}
+  - component: {fileID: 1422401909}
+  - component: {fileID: 1422401908}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1422401908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422401907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!108 &1422401909
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422401907}
+  m_Enabled: 0
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.9855094, g: 1, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 20
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1422401910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422401907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1425029788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8378884397551883409, guid: 47b267544c7253445a061a5e1a05eff8, type: 3}
@@ -26119,9 +26234,9 @@ MonoBehaviour:
   foamShadowsExpanded: 0
   intersectionEffectsExpanded: 0
   planarReflectionsExpanded: 0
-  reflectionStrength: 0.82
-  reflectionFresnel: 2.5
-  useColorGradient: 0
+  reflectionStrength: 1
+  reflectionFresnel: 7
+  useColorGradient: 1
   colorGradient:
     serializedVersion: 2
     key0: {r: 0, g: 0.87569785, b: 1, a: 1}
@@ -26151,24 +26266,24 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42745093, b: 0.6784314, a: 1}
-  colorDepth: 1.51
-  horizonColor: {r: 0, g: 0, b: 0, a: 1}
+  colorGradientTexture: {fileID: 2800000, guid: 54109a0a754032c458563a9ff982d502, type: 3}
+  shallowColor: {r: 0.9627912, g: 1, b: 0, a: 1}
+  deepColor: {r: 0, g: 0, b: 0, a: 1}
+  colorDepth: 1.79
+  horizonColor: {r: 1, g: 1, b: 1, a: 1}
   horizonDistance: 20
-  shoreFade: 0
-  shoreColor: {r: 0, g: 0, b: 0, a: 0}
+  shoreFade: 1
+  shoreColor: {r: 1, g: 1, b: 1, a: 0}
   shoreStrength: 0
   shoreBlend: 0
-  shoreDepth: 0
-  waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.2039216, g: 0.3098039, b: 0.5176471, a: 0}
+  shoreDepth: 3
+  waveColor: {r: 0, g: 0.5328021, b: 1, a: 0}
+  underwaterColor: {r: 0.0026106483, g: 0.03675315, b: 0.103773594, a: 0}
   underwaterColorStrength: 0
-  underwaterRefractionStrength: 0.099
+  underwaterRefractionStrength: 0.3
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
-  surfaceFoamSampling: {x: 1, y: 0}
-  surfaceFoamCutoff: 1
+  surfaceFoamSampling: {x: 0, y: 0}
+  surfaceFoamCutoff: 0
   surfaceFoamDistortion: 0
   surfaceFoamBlend: 0
   surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
@@ -26183,21 +26298,21 @@ MonoBehaviour:
   surfaceFoamOffsetY: 0
   surfaceFoamScale1: 0
   surfaceFoamScale2: 0
-  enableSurfaceFoam: 1
+  enableSurfaceFoam: 0
   surfaceFoamHeightMask: 0
   surfaceFoamHeightMaskSmoothness: 0
   enableHeightMask: 0
-  foamShadowStrength: 0.45
-  foamShadowDepth: 10
-  surfaceFoamShadowProjection: 15
-  intersectionFoamShadowProjection: 4.6
+  foamShadowStrength: 0.635
+  foamShadowDepth: 2.63
+  surfaceFoamShadowProjection: 2.23
+  intersectionFoamShadowProjection: 3.77
   foamMovement: 0
-  intersectionFoamDepth: 0.51
+  intersectionFoamDepth: 0.23
   intersectionFoamTexture: {fileID: 2800000, guid: 772031b03d9d46e4ab03e15c8e17718c, type: 3}
   intersectionFoamColor: {r: 1, g: 1, b: 1, a: 1}
-  intersectionFoamMovement: {x: 0.836, y: 1.078}
-  intersectionFoamDirection: 0.836
-  intersectionFoamSpeed: 1.078
+  intersectionFoamMovement: {x: 0, y: 0.029}
+  intersectionFoamDirection: 0
+  intersectionFoamSpeed: 0.029
   intersectionFoamScale: 0.257
   intersectionFoamSampling: {x: 1, y: 0.38}
   intersectionFoamCutoff: 1
@@ -26211,32 +26326,32 @@ MonoBehaviour:
   shoreFoamBreakupStrength: 0
   shoreFoamBreakupScale: 0
   lighting: 0
-  lightingSmoothness: 1
-  lightingSpecularColor: {r: 1, g: 1, b: 1, a: 0}
+  lightingSmoothness: 0.674
+  lightingSpecularColor: {r: 1, g: 0.98213357, b: 0.75157225, a: 0}
   lightingDiffuseColor: {r: 0, g: 0, b: 0, a: 0}
-  lightingHardness: 0
+  lightingHardness: 1
   normalsTexture: {fileID: 2800000, guid: a41da5f5671718b47bbc71e9ef691103, type: 3}
-  normalsMovement: {x: 0.3, y: 0.938}
-  normalsStrength: 0.29
-  normalsScale: 0.938
-  normalsSpeed: 0.3
-  refractionStrength: 0.004
-  waveVisuals: {x: 0.018, y: 7.9, z: 1.38}
-  waveSteepness: 0.018
-  waveLength: 7.9
-  waveSpeed: 1.38
-  waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
+  normalsMovement: {x: 0.02, y: 2}
+  normalsStrength: 0.369
+  normalsScale: 2
+  normalsSpeed: 0.02
+  refractionStrength: 0.011
+  waveVisuals: {x: 0.009, y: 20, z: 1.55}
+  waveSteepness: 0.009
+  waveLength: 20
+  waveSpeed: 1.55
+  waveDirections: {x: 0, y: 0, z: 0, w: 0}
   waveDirection1: 0
-  waveDirection2: 0.64
-  waveDirection3: 1
-  waveDirection4: 0.33
-  waterUVs: 0
+  waveDirection2: 0
+  waveDirection3: 0
+  waveDirection4: 0
+  waterUVs: 1
   hideComponents: 0
   enableFoamShadows: 1
   enableRefraction: 0
   meshRenderer: {fileID: 1581277297}
   meshFilter: {fileID: 1581277298}
-  material: {fileID: 2100000, guid: ea66d3ba3c5ac7d498707e8c9e54524f, type: 2}
+  material: {fileID: 2100000, guid: d337fc5282607644ebb2f3575513265e, type: 2}
 --- !u!23 &1581277297
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26257,7 +26372,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ea66d3ba3c5ac7d498707e8c9e54524f, type: 2}
+  - {fileID: 2100000, guid: d337fc5282607644ebb2f3575513265e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26443,7 +26558,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 829aecdb0d31b9c4c95731ea1f18adf4, type: 2}
+  - {fileID: 2100000, guid: 6a40018be2e14274d9311c451fd42650, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32051,7 +32166,7 @@ PrefabInstance:
     - target: {fileID: 9171879316095536724, guid: 0c0804ff1525ea246ba00ffe00b8574f, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 21ec07e2908d7bc48a9c7280a5a2378b, type: 2}
+      objectReference: {fileID: 2100000, guid: f80e58d8221e25244a04d0ffe028ebd9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c0804ff1525ea246ba00ffe00b8574f, type: 3}
 --- !u!1001 &4830512139889910453
