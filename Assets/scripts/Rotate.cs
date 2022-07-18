@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Rotate : MonoBehaviour
 {
@@ -10,21 +11,16 @@ public class Rotate : MonoBehaviour
     public AudioSource Sound;
     public AudioClip Day, Night;
 
-    private int num = 36;
-    private void Start()
-    {
-      //noth
-    }
-    
+    public Slider Speed;
+    public float NewSpeed;
+
+
     void Update()
     {
+        NewSpeed = Speed.value * 2;
 
-
-
-
-
-        transform.RotateAround(target.transform.position, Vector3.right, num * Time.deltaTime);
-        transform.RotateAround(target.transform.position, Vector3.up, num * Time.deltaTime);
+        transform.RotateAround(target.transform.position, Vector3.right, NewSpeed * Time.deltaTime);
+        transform.RotateAround(target.transform.position, Vector3.up, NewSpeed * Time.deltaTime);
         
         if ((Bol == 1) && transform.position.y > 26)
         {
